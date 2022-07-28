@@ -54,25 +54,25 @@
                         </el-icon>
                         <span>订单</span>
                     </template>
-                    <el-menu-item index="2-1" route="/bgm/test">
+                    <el-menu-item index="2-1" route="/bgm/order/list">
                         <el-icon>
                             <List />
                         </el-icon>
                         <span>订单列表</span>
                     </el-menu-item>
-                    <el-menu-item index="2-2">
+                    <el-menu-item index="2-2" route="/bgm/order/setting">
                         <el-icon>
                             <Setting />
                         </el-icon>
                         <span>订单设置</span>
                     </el-menu-item>
-                    <el-menu-item index="2-3">
+                    <el-menu-item index="2-3" route="/bgm/order/return">
                         <el-icon>
                             <Tickets />
                         </el-icon>
                         <span>退货申请处理</span>
                     </el-menu-item>
-                    <el-menu-item index="2-4">
+                    <el-menu-item index="2-4" route="/bgm/order/returnReason">
                         <el-icon>
                             <ChatLineSquare />
                         </el-icon>
@@ -87,13 +87,13 @@
                         </el-icon>
                         <span>营销</span>
                     </template>
-                    <el-menu-item index="3-1">
+                    <el-menu-item index="3-1" route="/bgm/sales/secondKillList">
                         <el-icon>
                             <AlarmClock />
                         </el-icon>
                         <span>秒杀活动列表</span>
                     </el-menu-item>
-                    <el-menu-item index="3-2">
+                    <el-menu-item index="3-2" route="/bgm/sales/couponsList">
                         <el-icon>
                             <Ticket />
                         </el-icon>
@@ -121,7 +121,7 @@
                         <span>人气推荐</span>
                     </el-menu-item>
 
-                    <el-menu-item index="3-6">
+                    <el-menu-item index="3-6" route="/bgm/sales/bannerList">
                         <el-icon>
                             <Orange />
                         </el-icon>
@@ -136,25 +136,25 @@
                         </el-icon>
                         <span>权限</span>
                     </template>
-                    <el-menu-item index="4-1">
+                    <el-menu-item index="4-1" route="/bgm/auth/userList">
                         <el-icon>
                             <User />
                         </el-icon>
                         <span>用户列表</span>
                     </el-menu-item>
-                    <el-menu-item index="4-2">
+                    <el-menu-item index="4-2" route="/bgm/auth/roleList">
                         <el-icon>
                             <Avatar />
                         </el-icon>
                         <span>角色列表</span>
                     </el-menu-item>
-                    <el-menu-item index="4-3">
+                    <el-menu-item index="4-3" route="/bgm/auth/menuList">
                         <el-icon>
                             <Menu />
                         </el-icon>
                         <span>菜单列表</span>
                     </el-menu-item>
-                    <el-menu-item index="4-4">
+                    <el-menu-item index="4-4" route="/bgm/auth/resourceList">
                         <el-icon>
                             <Document />
                         </el-icon>
