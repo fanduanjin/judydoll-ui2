@@ -3,7 +3,6 @@ import homePage from '@/bgm-views/HomePage'
 // 商品
 import productListPage from '@/bgm-views/goods/ListPage'
 import productAddPage from '@/bgm-views/goods/AddPage'
-import productBandManagePage from '@/bgm-views/goods/BrandManagePage'
 import productCategoryPage from '@/bgm-views/goods/CategoryManagePage'
 //订单
 import orderListPage from '@/bgm-views/order/ListPage'
@@ -29,7 +28,9 @@ export default {
                 // { path: '', component: productListPage },
                 { path: 'list', component: productListPage },
                 { path: 'add', component: productAddPage },
-                { path: 'brandManage', component: productBandManagePage },
+                { path: 'brand', component: () => import('@/bgm-views/goods/brand') },
+                { path: 'addBrand', component: () => import('@/bgm-views/goods/brand/add') },
+                { path: 'editBrand/:id', component: () => import('@/bgm-views/goods/brand/edit')},
                 { path: 'categoryManage', component: productCategoryPage }
             ]
         },

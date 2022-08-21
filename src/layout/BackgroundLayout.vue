@@ -10,7 +10,7 @@
                         <span>首页</span>
                     </template>
                 </el-menu-item>
-                <el-sub-menu>
+                <el-sub-menu index="1">
                     <template #title>
                         <el-icon>
                             <Goods />
@@ -38,7 +38,7 @@
                             <span>商品分类</span>
                         </template>
                     </el-menu-item>
-                    <el-menu-item index="1-4" route="/bgm/goods/brandManage"><template #title>
+                    <el-menu-item index="1-4" route="/bgm/goods/brand"><template #title>
                             <el-icon>
                                 <PriceTag />
                             </el-icon>

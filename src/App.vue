@@ -10,3 +10,13 @@ export default {
   }
 </script>
 
+<style>
+.float-right{
+  float: right;
+}
+
+.margin-top{
+  margin-top: 1rem;
+}
+
+</style>
