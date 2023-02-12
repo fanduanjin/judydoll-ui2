@@ -1,9 +1,9 @@
 <template>
-  <brand-detail edit></brand-detail>
+    <brand-detail></brand-detail>
 </template>
 
 <script>
-import brandDetail from "./component/brand-detail.vue";
+import brandDetail from "./component/detail.vue"
 export default {
   components: { brandDetail },
 };

@@ -3,7 +3,6 @@ import homePage from '@/bgm-views/HomePage'
 // 商品
 import productListPage from '@/bgm-views/goods/ListPage'
 import productAddPage from '@/bgm-views/goods/AddPage'
-import productCategoryPage from '@/bgm-views/goods/CategoryManagePage'
 //订单
 import orderListPage from '@/bgm-views/order/ListPage'
 import orderSettingPage from '@/bgm-views/order/SettingPage'
@@ -11,7 +10,7 @@ import orderReturnPage from '@/bgm-views/order/ReturnPage'
 import orderReturnReasonPage from '@/bgm-views/order/ReturnReasonPage'
 //营销
 import salesBannerSettingPage from '@/bgm-views/sales/BannerSettingPage'
-import salesCouponsPage from '@/bgm-views/sales/CouponsPage'
+import salesCouponsPage from '@/bgm-views/sales/coupons/list'
 import salesSecondKillListPage from '@/bgm-views/sales/SecondKillListPage'
 //权限
 import authUserListPage from '@/bgm-views/auth/UserListPage'
@@ -28,10 +27,11 @@ export default {
                 // { path: '', component: productListPage },
                 { path: 'list', component: productListPage },
                 { path: 'add', component: productAddPage },
-                { path: 'brand', component: () => import('@/bgm-views/goods/brand') },
-                { path: 'addBrand', component: () => import('@/bgm-views/goods/brand/add') },
-                { path: 'editBrand/:id', component: () => import('@/bgm-views/goods/brand/edit')},
-                { path: 'categoryManage', component: productCategoryPage }
+                {path:'edit/:id',component:()=>import('@/bgm-views/goods/EditPage')},
+                { path: 'category', component: () => import('@/bgm-views/goods/category') },
+                { path: 'addCategory/:parentId', component: () => import('@/bgm-views/goods/category/add') },
+                { path: 'editCategory/:id', component: () => import('@/bgm-views/goods/category/edit') },
+
             ]
         },
         {
@@ -49,6 +49,7 @@ export default {
             children: [
                 { path: 'bannerList', component: salesBannerSettingPage },
                 { path: 'couponsList', component: salesCouponsPage },
+                {path:'addCoupons',component: ()=>import('@/bgm-views/sales/coupons/add')},
                 { path: 'secondKillList', component: salesSecondKillListPage }
             ]
         },

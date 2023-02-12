@@ -31,20 +31,20 @@
                             <span>添加商品</span>
                         </template>
                     </el-menu-item>
-                    <el-menu-item index="1-3" route="/bgm/goods/categoryManage"><template #title>
+                    <el-menu-item index="1-3" route="/bgm/goods/category"><template #title>
                             <el-icon>
                                 <Grid />
                             </el-icon>
                             <span>商品分类</span>
                         </template>
                     </el-menu-item>
-                    <el-menu-item index="1-4" route="/bgm/goods/brand"><template #title>
+                    <!-- <el-menu-item index="1-4" route="/bgm/goods/brand"><template #title>
                             <el-icon>
                                 <PriceTag />
                             </el-icon>
                             <span>品牌管理</span>
                         </template>
-                    </el-menu-item>
+                    </el-menu-item> -->
                 </el-sub-menu>
 
                 <el-sub-menu index="2">
@@ -164,7 +164,7 @@
             </el-menu>
         </el-aside>
         <el-container>
-            <el-header>header</el-header>
+            <el-header><!--header--></el-header>
             <el-main>
                 <router-view></router-view>
             </el-main>
